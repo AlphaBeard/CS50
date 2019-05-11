@@ -5,39 +5,71 @@
     <title>Kyles Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="bg">
     <div class="container-fluid">
-        <div class="row bg">
-            <div class="row" style="height:60%">
-                <h1>WELCOME KYLE</h1>
+
+        <!-- image slideshow -->
+        <div class="row border1" style="height:60%">
+            <h1>Welcome Kyle</h1>
+            <!-- <div class="col" style="height:80%">
+                <img class="mySlides center" src="images/code2.png">
+                <img class="mySlides center" src="images/codecode.jpg" style="height:100%">
+                <img class="mySlides center" src="images/how-read-website-source-code.jpg">
+            </div> --> -->
+
+        </div>
+        <div class="row" style="height:40%">
+            <div class="col-md-4 ">
+                <h1>C</h1>
+                <a href="https://gitlab.soe.ucsc.edu/gitlab/cmpe013/spring19/kajeffre" class="center">
+                    <img src="images/folder.png" class="resize">
+                </a>
             </div>
-            <div id="realrow" class="row" style="height:40%">
-                <div class="col-md-4 ">
-                    <h1>C</h1>
+            <div class="col-md-4">
+                <h1>MIPS</h1>
+                <a href="https://gitlab.soe.ucsc.edu/gitlab/cmpe012/fall18/kajeffre/tree/master/CE%2012" class="center">
+                    <img src="images/folder.png" class="resize">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h1>Verilog</h1>
+                <a href="https://gitlab.soe.ucsc.edu/gitlab/cmpe012/fall18/kajeffre/tree/master/CE%20100" class="center">
+                    <img src="images/folder.png" class="resize">
+                </a>
 
-                    <img src="images/folder.png" class="center">
-
-                </div>
-
-                <div class="col-md-4">
-                    <h1>MIPS</h1>
-                    <img src="images/folder.png" class="center">
-
-                </div>
-                <div class="col-md-4">
-                    <h1>Verilog</h1>
-
-                    <img src="images/folder.png" class="center">
-                </div>
             </div>
         </div>
     </div>
 
     </div>
+
+
+
+
+
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
 
 
 </body>

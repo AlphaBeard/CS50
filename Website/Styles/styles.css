@@ -6,7 +6,7 @@ body,html{
 }
 
 .bg{
-    padding-top: 0px !important;
+    
 
   /* The image used */
   background: url("backdrop.gif") no-repeat center center fixed;
@@ -17,12 +17,13 @@ body,html{
 
 background-size: cover;
 }
+.border1{
+    border-color: #ffce00;
+    border-style:solid;
+}
 .container-fluid{
-    height:100vh;
-    width:100vw;
-    padding-left: 0px;
-
-    padding-right: 0px;
+    height:100%;
+    width:1005;
 }
 
 
@@ -35,6 +36,13 @@ background-size: cover;
     margin-right: auto;
     width: 50%;
    
+}
+.resize{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
 }
 h1{
     text-align: center;
